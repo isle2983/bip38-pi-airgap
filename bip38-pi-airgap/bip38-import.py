@@ -9,9 +9,9 @@ import argparse
 from pybip38 import bip38decrypt
 
 # Electrum scriptin API dependency:
-sys.path.insert(0, 'Electrum-3.0.4/packages')
+sys.path.insert(0, 'Electrum-3.0.5/packages')
 import imp
-imp.load_module('electrum', *imp.find_module('Electrum-3.0.4/lib'))
+imp.load_module('electrum', *imp.find_module('Electrum-3.0.5/lib'))
 from electrum.storage import WalletStorage
 from electrum.wallet import Imported_Wallet
 from electrum.keystore import Imported_KeyStore

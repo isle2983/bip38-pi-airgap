@@ -1,5 +1,5 @@
-7ee47501622ccf5ddd11507a3baf87ad  bip38-import.py
-618333eea74a75f82af3e7a72a9d94f5  setup.py
+3097529ffbdda0881c95fd6076164d59  bip38-import.py
+dd6ad3c9f0a1e6f4ab43ded12aeca35e  setup.py
 1ecf801f2b82482b6701e09cb1071f92  depends/debs/gir1.2-glib-2.0_1.50.0-1_armhf.deb
 02f01409aea79c0caee3bb6c3431fee7  depends/debs/libdbus-glib-1-2_0.108-2_armhf.deb
 a185cc725096a1699f41defed77c2172  depends/debs/libexpat1-dev_2.2.0-2+deb9u1_armhf.deb
@@ -32,4 +32,4 @@ b73a7368e556e48e5b181e8c9205245d  depends/debs/python-pip-whl_9.0.1-2+rpt1_all.d
 bb10ec01167842309092b36fe1b82ec3  depends/pips/pycrypto-2.6.1-cp35-cp35m-linux_armv6l.whl
 c7155bc886fa978179ca1c5d97b44c83  depends/pips/scrypt-0.8.0-cp35-cp35m-linux_armv6l.whl
 7db39a9a5b847a0efb4c196f14cfec1f  depends/pips/simplebitcoinfuncs-0.1.5-py2.py3-none-any.whl
-38201a44856958006a1bc2d20b8dbe59  depends/Electrum-3.0.4.tar.gz
+c64741b42523c9aeacfd86bff4a0297b  depends/Electrum-3.0.5.tar.gz

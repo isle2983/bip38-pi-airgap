@@ -35,7 +35,7 @@ if not run_cmd(cmd):
 print("OK\n")
 
 print("Extract electrum:\n")
-cmd = ['tar', '-zxpvf', 'depends/Electrum-3.0.4.tar.gz']
+cmd = ['tar', '-zxpvf', 'depends/Electrum-3.0.5.tar.gz']
 if not run_cmd(cmd):
     sys.exit("Electrum not extracted")
 print("OK\n")

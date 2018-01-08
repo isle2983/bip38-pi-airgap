@@ -20,7 +20,7 @@ Included scripts
 
 2. `bip38-import.py` - Takes a BIP38 passphrase-encrypted private key and a passphrase and creates an Electrum wallet file in a RAM-held tmpfs location which can be given as a parameter to Electrum's CLI interface for subsequent operations.
 
-3. `Electrum-3.0.4.tar.gz` - The full release of Electrum 3.0.4 will be unpacked and is subsequently usable on the image via the CLI and/or Python scripting interface. The GUI interface is not runnable due to the desktop environment not being included in the starting image.
+3. `Electrum-3.0.5.tar.gz` - The full release of Electrum 3.0.5 will be unpacked and is subsequently usable on the image via the CLI and/or Python scripting interface. The GUI interface is not runnable due to the desktop environment not being included in the starting image.
 
 4. `pybip38` - The entirety of this library is installed for the use of `bip38-import.py`. Its other API calls may also be useful.
 
@@ -52,7 +52,11 @@ $ sha256sum 2017-11-29-raspbian-stretch-lite.zip
 e942b70072f2e83c446b9de6f202eb8f9692c06e7d92c343361340cc016e0c9f  2017-11-29-raspbian-stretch-lite.zip
 ```
 
-2. The [official Electrum 3.0.4](https://electrum.org/#download) release.
+2. The [official Electrum 3.0.5](https://electrum.org/#download) release [included in this repository](bip38-pi-airgap/depends/).
+```
+$ sha256sum Electrum-3.0.5.tar.gz 
+61ebc06782433f928853188762c6f3098bd3d08d54c34b5594233d196e51e01b  Electrum-3.0.5.tar.gz
+```
 
 3. [27 Debian/Raspbian packages](bip38-pi-airgap/depends/debs/) not included in the Raspbian lite image (`2017-11-29-raspbian-stretch-lite.zip`) which includes `python3-pip`, `libssl-dev` and all underlying dependencies. These are required for meeting the dependencies of `pybip38`. These were originally fetched via `aptitude` from an internet-connected Raspberry Pi.
 
@@ -145,7 +149,7 @@ Running:
 $ ./bip38-import.py <bip38-encrypted-key> <passphrase>
 ```
 
-will decrypt the key with the passphrase and write a wallet file to `/run/user/1000/wallet`. This wallet file can be used as a parameter for the `electrum` cli utility unpacked to `/home/pi/bip38-pi-airgap/Electrum-3.0.4/`. Giving commands the parameter `-w /run/user/1000/wallet` will point Electrum at this wallet to use as the source of private keys.
+will decrypt the key with the passphrase and write a wallet file to `/run/user/1000/wallet`. This wallet file can be used as a parameter for the `electrum` cli utility unpacked to `/home/pi/bip38-pi-airgap/Electrum-3.0.5/`. Giving commands the parameter `-w /run/user/1000/wallet` will point Electrum at this wallet to use as the source of private keys.
 
 Since this wallet file is held in tmpfs, it is not written to the SD card and will be lost if and when the Raspberry Pi is powered off.
 
@@ -175,13 +179,13 @@ This wallet can be used with the Electrum cli's '-w' parameter:
 ```
 Sign a message with Electrum:
 ```
-$ Electrum-3.0.4/electrum -w /run/user/1000/wallet signmessage 1P97WpopdbbpNiEfEqfGF8oQX8KTfQVJc1 "This is the message for testing purposes."
+$ Electrum-3.0.5/electrum -w /run/user/1000/wallet signmessage 1P97WpopdbbpNiEfEqfGF8oQX8KTfQVJc1 "This is the message for testing purposes."
 IJSbiLQNWjWZS6f8WIjY+8YfkaeEspwg/bWdzcIBMVCYBMqK+plw5B8pik6RFMVggp5O1yAm9lZrkPzic+EDp2U=
 ```
 
 Verify the message signature with Electrum:
 ```
-$ Electrum-3.0.4/electrum verifymessage 1P97WpopdbbpNiEfEqfGF8oQX8KTfQVJc1 IJSbiLQNWjWZS6f8WIjY+8YfkaeEspwg/bWdzcIBMVCYBMqK+plw5B8pik6RFMVggp5O1yAm9lZrkPzic+EDp2U= "This is the message for testing purposes."
+$ Electrum-3.0.5/electrum verifymessage 1P97WpopdbbpNiEfEqfGF8oQX8KTfQVJc1 IJSbiLQNWjWZS6f8WIjY+8YfkaeEspwg/bWdzcIBMVCYBMqK+plw5B8pik6RFMVggp5O1yAm9lZrkPzic+EDp2U= "This is the message for testing purposes."
 true
 ```
 
