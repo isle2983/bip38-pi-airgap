@@ -1,5 +1,5 @@
-0756c273af1335fe5b8766730f7a5a84402d143a98c2d6a3af0a6e8b92e8a15b  bip38-import.py
-c2c52a2eae693e7e4e70ff25979809744c4dd6f048975052620f4e2d7e543570  setup.py
+ce83fedfa0767c71a8b5ce8972f1c8c914af11acefeea68f3b44b62e349b3e7c  bip38-import.py
+39699174bedb8ed7138bbadc7b11cb99fe1e7d92348c050154f0b2c6d68e74b0  setup.py
 5d84a87121ef7edf7a68488286932b242f5a5f84e36eece791f83d6db3767811  depends/debs/gir1.2-glib-2.0_1.50.0-1_armhf.deb
 60914e0d69a3cb13c1deec428006f089a37eed306e623af7bef178fefd030e52  depends/debs/libdbus-glib-1-2_0.108-2_armhf.deb
 2d13cb5b9ee8d37c2d9d1515e6ebd36769b44adc1d58cd9470d5924d25c0df49  depends/debs/libexpat1-dev_2.2.0-2+deb9u1_armhf.deb
@@ -32,4 +32,5 @@ e3c829373b37bc729786a2d2c6ac89bad4a21d8e11c0504beca8cf7b6a855954  depends/pips/p
 cb29c652e8b2c9c0a6eac869a9d6a888e61a6a658400a80804d4f3105f78ee07  depends/pips/pycrypto-2.6.1-cp35-cp35m-linux_armv6l.whl
 7b61f85c22c643379035b4a8a328777d57a94ab975775e54bed6d791c91ba0b2  depends/pips/scrypt-0.8.0-cp35-cp35m-linux_armv6l.whl
 42876d2d604cbd8ac72081d7ec670f7d4b3ab84fabec120793b6e2f5f321f3a2  depends/pips/simplebitcoinfuncs-0.1.5-py2.py3-none-any.whl
-526675ddde26908c3b0d46e024a4df2e780b6edb4c36a793d64ca5c8fcea7b0f  depends/Electrum-3.0.4.tar.gz
+61ebc06782433f928853188762c6f3098bd3d08d54c34b5594233d196e51e01b  depends/Electrum-3.0.5.tar.gz
+39699174bedb8ed7138bbadc7b11cb99fe1e7d92348c050154f0b2c6d68e74b0  setup.py
