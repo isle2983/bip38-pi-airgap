@@ -1,5 +1,3 @@
-WARNING - __this is presently undergoing beta testing__  - I will remove this warning once more people have tested it out.
-
 bip38-pi-airgap
 ===============
 A script-assisted process for setting up a minimal Raspberry Pi OS image for decrypting BIP38 private keys and using Electrum. It is designed and intended to be used on an airgapped setup to limit exposure of private keys to external devices and networks.
@@ -195,7 +193,7 @@ Additional Airgapped Pi Tips
 
 2. Avoid USB hubs and direct-connect your USB keyboard to the Pi. A hub could potentially hide keyloggers or other malicious devices.
 
-3. Obtain an inexpensive USB keyboard that can be taken apart and inspected to help ensure there is no malicious tampering. Depending on your security profile, there are available designs for USB keyboards build out of simple parts.
+3. Obtain an inexpensive USB keyboard that can be taken apart and inspected to help ensure there is no malicious tampering. Depending on your security profile, there are available designs for USB keyboards build out of simple parts and running open source software.
 
 4. There are known attacks for logging hidden data on SD cards. Depending on your security profile, consider destroying the SD card after the system has been in contact with private keys.
 
